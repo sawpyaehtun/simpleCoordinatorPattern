@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,136 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="Coordinators" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpT-ZK-IKl">
+                                <rect key="frame" x="16" y="36" width="343" height="30"/>
+                                <state key="normal" title="Buy"/>
+                                <connections>
+                                    <action selector="buyTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yTl-Zp-dba"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kjC-RM-SLf">
+                                <rect key="frame" x="16" y="82" width="343" height="30"/>
+                                <state key="normal" title="Create"/>
+                                <connections>
+                                    <action selector="createTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J43-cw-eIe"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kjC-RM-SLf" firstAttribute="top" secondItem="dpT-ZK-IKl" secondAttribute="bottom" constant="16" id="7V9-QU-eZG"/>
+                            <constraint firstItem="dpT-ZK-IKl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="G20-jU-UmQ"/>
+                            <constraint firstItem="dpT-ZK-IKl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="PtG-kE-dm6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dpT-ZK-IKl" secondAttribute="trailing" constant="16" id="aPc-Yz-Afr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kjC-RM-SLf" secondAttribute="trailing" constant="16" id="rzN-oQ-XbQ"/>
+                            <constraint firstItem="kjC-RM-SLf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="tQr-Qg-WXA"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Buy View Controller-->
+        <scene sceneID="dOq-uu-fFk">
+            <objects>
+                <viewController storyboardIdentifier="BuyViewController" id="n2l-6z-sID" customClass="BuyViewController" customModule="Coordinators" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pra-Us-hKt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is Buy ViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I8X-gX-ZXk">
+                                <rect key="frame" x="16" y="36" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kat-aM-bsq">
+                                <rect key="frame" x="16" y="73" width="343" height="30"/>
+                                <state key="normal" title="Main"/>
+                                <connections>
+                                    <action selector="mainTapped:" destination="n2l-6z-sID" eventType="touchUpInside" id="mk9-1n-4Ng"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZeW-SU-htU">
+                                <rect key="frame" x="16" y="119" width="343" height="30"/>
+                                <state key="normal" title="Create"/>
+                                <connections>
+                                    <action selector="createTapped:" destination="n2l-6z-sID" eventType="touchUpInside" id="K0C-fM-gQd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Kat-aM-bsq" firstAttribute="top" secondItem="I8X-gX-ZXk" secondAttribute="bottom" constant="16" id="3Ak-3C-qyU"/>
+                            <constraint firstItem="ZeW-SU-htU" firstAttribute="leading" secondItem="I6W-Pr-dFJ" secondAttribute="leading" constant="16" id="86n-dI-tma"/>
+                            <constraint firstItem="I6W-Pr-dFJ" firstAttribute="trailing" secondItem="Kat-aM-bsq" secondAttribute="trailing" constant="16" id="8Ep-TO-cMa"/>
+                            <constraint firstItem="I8X-gX-ZXk" firstAttribute="leading" secondItem="I6W-Pr-dFJ" secondAttribute="leading" constant="16" id="XZw-eZ-YK7"/>
+                            <constraint firstItem="I6W-Pr-dFJ" firstAttribute="trailing" secondItem="ZeW-SU-htU" secondAttribute="trailing" constant="16" id="YOP-5L-fO4"/>
+                            <constraint firstItem="I8X-gX-ZXk" firstAttribute="top" secondItem="I6W-Pr-dFJ" secondAttribute="top" constant="16" id="Z8G-OY-kIS"/>
+                            <constraint firstItem="ZeW-SU-htU" firstAttribute="top" secondItem="Kat-aM-bsq" secondAttribute="bottom" constant="16" id="jOt-dz-ojn"/>
+                            <constraint firstItem="Kat-aM-bsq" firstAttribute="leading" secondItem="I6W-Pr-dFJ" secondAttribute="leading" constant="16" id="p7L-VS-aGn"/>
+                            <constraint firstItem="I6W-Pr-dFJ" firstAttribute="trailing" secondItem="I8X-gX-ZXk" secondAttribute="trailing" constant="16" id="qOy-zl-qXN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="I6W-Pr-dFJ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jaj-Ir-x6u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="703" y="27"/>
+        </scene>
+        <!--Create View Controller-->
+        <scene sceneID="jXd-1U-5Y4">
+            <objects>
+                <viewController storyboardIdentifier="CreateViewController" id="Zo3-ky-8ta" customClass="CreateViewController" customModule="Coordinators" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cav-eF-Tov">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is Create ViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5rt-te-gY4">
+                                <rect key="frame" x="16" y="36" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fVq-aB-vrl">
+                                <rect key="frame" x="16" y="73" width="343" height="30"/>
+                                <state key="normal" title="Main"/>
+                                <connections>
+                                    <action selector="mainTapped:" destination="Zo3-ky-8ta" eventType="touchUpInside" id="s1Q-gQ-bZI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aWK-h2-SZI">
+                                <rect key="frame" x="16" y="119" width="343" height="30"/>
+                                <state key="normal" title="Buy"/>
+                                <connections>
+                                    <action selector="buyTapped:" destination="Zo3-ky-8ta" eventType="touchUpInside" id="asl-gq-uii"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="aWK-h2-SZI" firstAttribute="top" secondItem="fVq-aB-vrl" secondAttribute="bottom" constant="16" id="14B-U5-JDE"/>
+                            <constraint firstItem="RZW-ja-sZr" firstAttribute="trailing" secondItem="5rt-te-gY4" secondAttribute="trailing" constant="16" id="49G-yD-mql"/>
+                            <constraint firstItem="aWK-h2-SZI" firstAttribute="leading" secondItem="RZW-ja-sZr" secondAttribute="leading" constant="16" id="DQS-Pb-N02"/>
+                            <constraint firstItem="RZW-ja-sZr" firstAttribute="trailing" secondItem="aWK-h2-SZI" secondAttribute="trailing" constant="16" id="FQM-kl-UYF"/>
+                            <constraint firstItem="RZW-ja-sZr" firstAttribute="trailing" secondItem="fVq-aB-vrl" secondAttribute="trailing" constant="16" id="e89-Tc-dQ8"/>
+                            <constraint firstItem="fVq-aB-vrl" firstAttribute="top" secondItem="5rt-te-gY4" secondAttribute="bottom" constant="16" id="guC-4X-vVQ"/>
+                            <constraint firstItem="5rt-te-gY4" firstAttribute="leading" secondItem="RZW-ja-sZr" secondAttribute="leading" constant="16" id="qf8-p9-Gef"/>
+                            <constraint firstItem="fVq-aB-vrl" firstAttribute="leading" secondItem="RZW-ja-sZr" secondAttribute="leading" constant="16" id="rcZ-4D-K1T"/>
+                            <constraint firstItem="5rt-te-gY4" firstAttribute="top" secondItem="RZW-ja-sZr" secondAttribute="top" constant="16" id="vU7-3q-1IN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RZW-ja-sZr"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Opf-1A-diN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1359" y="27"/>
         </scene>
     </scenes>
 </document>

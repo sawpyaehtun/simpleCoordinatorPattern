@@ -14,6 +14,11 @@
 		D044CEF022808EB900668C4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D044CEEE22808EB900668C4F /* LaunchScreen.storyboard */; };
 		D044CEFB22808EB900668C4F /* CoordinatorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D044CEFA22808EB900668C4F /* CoordinatorsTests.swift */; };
 		D044CF0622808EB900668C4F /* CoordinatorsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D044CF0522808EB900668C4F /* CoordinatorsUITests.swift */; };
+		D044CF1422808F1800668C4F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D044CF1322808F1800668C4F /* Coordinator.swift */; };
+		D044CF16228091DF00668C4F /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = D044CF15228091DF00668C4F /* Storyboarded.swift */; };
+		D044CF18228097A100668C4F /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D044CF17228097A100668C4F /* MainCoordinator.swift */; };
+		D044CF1A2280A4B100668C4F /* BuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D044CF192280A4B100668C4F /* BuyViewController.swift */; };
+		D044CF1C2280A4C200668C4F /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D044CF1B2280A4C200668C4F /* CreateViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		D044CF0122808EB900668C4F /* CoordinatorsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoordinatorsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D044CF0522808EB900668C4F /* CoordinatorsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorsUITests.swift; sourceTree = "<group>"; };
 		D044CF0722808EB900668C4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D044CF1322808F1800668C4F /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		D044CF15228091DF00668C4F /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		D044CF17228097A100668C4F /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		D044CF192280A4B100668C4F /* BuyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyViewController.swift; sourceTree = "<group>"; };
+		D044CF1B2280A4C200668C4F /* CreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +107,17 @@
 		D044CEE422808EB900668C4F /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
+				D044CF1322808F1800668C4F /* Coordinator.swift */,
 				D044CEE522808EB900668C4F /* AppDelegate.swift */,
 				D044CEE722808EB900668C4F /* ViewController.swift */,
 				D044CEE922808EB900668C4F /* Main.storyboard */,
 				D044CEEC22808EB900668C4F /* Assets.xcassets */,
 				D044CEEE22808EB900668C4F /* LaunchScreen.storyboard */,
 				D044CEF122808EB900668C4F /* Info.plist */,
+				D044CF15228091DF00668C4F /* Storyboarded.swift */,
+				D044CF17228097A100668C4F /* MainCoordinator.swift */,
+				D044CF192280A4B100668C4F /* BuyViewController.swift */,
+				D044CF1B2280A4C200668C4F /* CreateViewController.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -258,6 +273,11 @@
 			files = (
 				D044CEE822808EB900668C4F /* ViewController.swift in Sources */,
 				D044CEE622808EB900668C4F /* AppDelegate.swift in Sources */,
+				D044CF1C2280A4C200668C4F /* CreateViewController.swift in Sources */,
+				D044CF1422808F1800668C4F /* Coordinator.swift in Sources */,
+				D044CF18228097A100668C4F /* MainCoordinator.swift in Sources */,
+				D044CF16228091DF00668C4F /* Storyboarded.swift in Sources */,
+				D044CF1A2280A4B100668C4F /* BuyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
